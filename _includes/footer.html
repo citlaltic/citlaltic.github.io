@@ -1,0 +1,10 @@
+<footer>
+	<!-- contact info -->
+   {% for item in site.data.footer %}
+   <!-- add icons -->
+    <a href="{{ item.link }}">{{ item.name }}</a>
+  {% endfor %}
+
+	<!-- license -->
+   <p>&copy; Copyright {{ "now" | date: "%Y" }} except where otherwise noted</p> 
+</footer>

@@ -1,6 +1,5 @@
-<nav class="navbar navbar-light bg-light">
+<nav class="nav nav-pills nav-fill">
   {% for item in site.data.navigation %}
-    <a class="nav-item nav-link" href="{{ item.link }}" 
-    {% if page.url == link.url %}class="active"{% endif %}>{{ item.name }}</a>
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="nav-link active" {% else %} class="nav-link"{% endif %}>{{ item.name }}</a>
   {% endfor %}
 </nav>
